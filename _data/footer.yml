@@ -1,4 +1,7 @@
 # Footer navigation links
 
-- title:
-  url:
+- title: 订阅
+  url: /subscribe/
+
+- title: 捐赠
+  url: http://mademistakes.com

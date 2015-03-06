@@ -1,23 +1,35 @@
 # Site wide configuration
 
-title:
-description:
-logo: # 120x120 px default image used for Twitter summary card
-teaser: # 400x250 px default teaser image used in image archive grid
+title: 谭礼渊的博客
+description: 给我一个接口、一份文档，我能窥探整个世界
+logo: logo.jpg # 120x120 px default image used for Twitter summary card
+teaser: branch-400x250.jpg # 400x250 px default teaser image used in image archive grid
 locale:
-url:
+url: http://127.0.0.1:4000
 
 # Jekyll configuration
 
 sass:
     sass_dir: _sass
     style: compressed
-permalink: /:categories/:title/
+permalink: /:categories/:year/:month/:day/:title
 markdown: kramdown
 highlighter: pygments
 gems:
   - jekyll-sitemap
 
+# 技术类别
+terms:
+  extjs: images/logo/logo-Sencha.png
+  jquery: images/logo/logo-jquery.png
+
+  jquery-mobile: images/logo/logo-jquery-mobile.png
+  spring: images/logo/logo-spring.png
+  ehcache: images/logo/logo-ehcache.png
+  hibernate: images/logo/logo-hibernate.png
+  mongodb: images/logo/logo-mongodb.png
+  junit: images/logo/logo-junit.png
+  nodejs: images/logo/logo-nodejs.svg
 
 # Site owner
 owner:
@@ -25,11 +37,11 @@ owner:
   email:
   twitter:
   google:
-    ad-client: 
-    ad-slot: 
-  bio: 
+    ad-client:
+    ad-slot:
+  bio:
   avatar: bio-photo.jpg # 160x160 px image for author byline
-disqus-shortname:
+disqus-shortname: tanliyuan
 
 
 exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]

@@ -1,6 +1,18 @@
 # Site navigation links
 
-- title:
-  url:
-  excerpt:
-  image:
+
+
+
+- title: 首页
+  url: /
+  excerpt: "Things I’ve designed, illustrated, developed, coded, and whatever."
+  image: logo.jpg
+
+- title: 博客
+  url: http://mademistakes.com
+
+- title: 视频
+
+- title: 作品Demo
+
+- title: 关于

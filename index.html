@@ -1,0 +1,33 @@
+---
+layout: default
+permalink: /
+title: "首页"
+---
+
+<div class="page-lead" style="background-image:url(//mmistakes.github.io/skinny-bones-jekyll/images/wood-texture-1600x800.jpg)">
+      <div class="wrap page-lead-content">
+        <h1>Skinny Bones</h1>
+        <h2>Jump start your Jekyll site with something thin and light.</h2>
+        <a href="//mmistakes.github.io/skinny-bones-jekyll/getting-started/" class="btn-inverse">Start Using Skinny Bones</a> &nbsp; or &nbsp; <a href="https://github.com/mmistakes/skinny-bones-jekyll" class="btn-inverse">View on GitHub</a>
+      </div><!-- /.page-lead-content -->
+    </div>
+<!-- /.page-lead -->
+<div id="main" role="main" style="background-image: url(images/bg-geo.png)">
+  <div class="wrap">
+
+      {% for term in site.terms %}
+        <div class="tile">
+          <img src="{{term[1]}}" alt="" />
+        </div>
+      {% endfor %}
+
+<!--
+    <div class="tiles">
+      {% for post in site.posts %}
+      {% include post-grid.html %}
+      {% endfor %}
+    </div>
+    -->
+   </div>
+  </div>
+

@@ -2,8 +2,9 @@
 // --------------------------------------------------
 
 #masthead {
-	padding: $gutter;
+	padding: 0; //$gutter; customer
 	z-index: 5;
+  background-color: #6f5499;
 	@include transform(translate(0,0));
 	@include transition(500ms cubic-bezier(.645,.045,.355,1.000));
 	&.slide {
@@ -115,7 +116,7 @@
 // --------------------------------------------------
 
 #page-wrapper {
-	padding: 0 $gutter; // add white space for smaller screens
+	padding: 0 0; //i do $gutter;  add white space for smaller screens
 	@include size(100% 100%);
 	-webkit-overflow-scrolling: touch;
 	z-index: 2;
@@ -165,7 +166,7 @@
 				//@include span-columns(7 of 9);
 			}
 			@include media($large) {
-				@include span-columns(7 of 9);
+				@include span-columns(9 of 9); //post width 100%
 			}
 			// larger font for intro paragraph
 			> p {
@@ -282,7 +283,7 @@
 	}
 }
 // make image flush with edges on small screens
-.page-image {	
+.page-image {
 	position: relative;
 	margin-left: -1 * $gutter;
 	margin-right: -1 * $gutter;
@@ -306,7 +307,7 @@
 	}
 }
 // breadcrumbs
-.breadcrumbs { 
+.breadcrumbs {
 	@include row;
 	margin-top: $gutter;
 	@include font-size(10,no);
@@ -343,10 +344,29 @@
 		}
 	}
 }
+
+.terms {
+  @include outer-container;
+  margin-bottom: $gutter;
+  background: #388fad;
+  @include media($micro) {
+    @include fill-parent;
+  }
+  @include media($small) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+  @include media($medium) {
+    @include span-columns(3);
+    @include omega(4n);
+  }
+}
+
 // tiles
 .tile {
 	@include outer-container;
 	margin-bottom: $gutter;
+  background: transparent;
 	@include media($micro) {
 		@include fill-parent;
 	}
@@ -456,16 +476,21 @@
 
 #site-footer {
 	@include outer-container;
-	margin-top: (3 * (0px + $doc-line-height));
-	margin-top: (3 * (0rem + ($doc-line-height / $doc-font-size)));
+	//margin-top: (3 * (0px + $doc-line-height));
+	//margin-top: (3 * (0rem + ($doc-line-height / $doc-font-size)));
+  margin-top: 0;
 	padding-bottom: $gutter;
 	font-family: $alt-font;
+  max-width: 100%; //i do override
+
+  background-color: #232a32;
 	.copyright {
 		@include font-size(12);
 		color: lighten($black,60);
 		a {
 			color: lighten($black,60);
 			text-decoration: none;
+
 		}
 	}
 }

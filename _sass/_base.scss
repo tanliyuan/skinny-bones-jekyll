@@ -5,6 +5,8 @@ body {
 	font-family: $base-font;
 	color: $text-color;
 	@include font-size(16);
+  background: $body-color;
+  margin-bottom: 0; //i do override
 }
 
 p {
