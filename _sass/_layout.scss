@@ -4,7 +4,7 @@
 #masthead {
 	padding: 0; //$gutter; customer
 	z-index: 5;
-  background-color: #6f5499;
+  background-color: #222;
 	@include transform(translate(0,0));
 	@include transition(500ms cubic-bezier(.645,.045,.355,1.000));
 	&.slide {
@@ -22,7 +22,7 @@
 	padding: (.25 * $masthead-height) 0; // fourth the height to center vertically
 	height: $masthead-height;
 	text-decoration: none;
-	color: $black;
+	color: $white; //i do $black;
 	font-family: $alt-font;
 	font-weight: 700;
 	@include font-size(20,no);
@@ -30,7 +30,10 @@
 	text-transform: uppercase;
 }
 
-
+//i do
+.site-title:hover {
+  color: #2ecc71;
+}
 // NAVIGATIONS
 // --------------------------------------------------
 
@@ -66,7 +69,7 @@
 			}
 			&:after {
 				width: 0;
-				background: $black;
+				background: blue; // i do $black;
 			}
 			&:active:after,
 			&:hover:after {
@@ -98,7 +101,7 @@
 			font-weight: 700;
 			@include font-size(16,no);
 			line-height: .5 * $masthead-height; // half the height to center vertically
-			color: $black;
+			color: $white;
 			text-transform: uppercase;
 		}
 	}
@@ -345,22 +348,7 @@
 	}
 }
 
-.terms {
-  @include outer-container;
-  margin-bottom: $gutter;
-  background: #388fad;
-  @include media($micro) {
-    @include fill-parent;
-  }
-  @include media($small) {
-    @include span-columns(6);
-    @include omega(2n);
-  }
-  @include media($medium) {
-    @include span-columns(3);
-    @include omega(4n);
-  }
-}
+
 
 // tiles
 .tile {
@@ -476,12 +464,12 @@
 
 #site-footer {
 	@include outer-container;
-	//margin-top: (3 * (0px + $doc-line-height));
-	//margin-top: (3 * (0rem + ($doc-line-height / $doc-font-size)));
-  margin-top: 0;
+	margin-top: (3 * (0px + $doc-line-height));
+	margin-top: (3 * (0rem + ($doc-line-height / $doc-font-size)));
+  margin-top: 4.5rem;
 	padding-bottom: $gutter;
 	font-family: $alt-font;
-  max-width: 100%; //i do override
+  max-width: 68em;
 
   background-color: #232a32;
 	.copyright {
@@ -493,4 +481,16 @@
 
 		}
 	}
+}
+
+.home-footer {
+  background: #232a32;
+  overflow: hidden; //better , hack margin-top problem
+  // padding-top: 1px; //often use
+  text-align: center;
+}
+
+.terms {
+  background-image: url(../images/bg-geo.png);
+  padding-top: 80px;
 }

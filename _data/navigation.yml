@@ -9,7 +9,8 @@
   image: logo.jpg
 
 - title: 博客
-  url: http://mademistakes.com
+  url: /archive.html #http://mademistakes.com
+  children: true
 
 - title: 视频
 
