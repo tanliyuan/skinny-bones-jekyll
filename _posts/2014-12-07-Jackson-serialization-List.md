@@ -3,6 +3,8 @@ layout: article
 title: Jackson 序列化Java List 对象
 category: tech
 tags: Jackson Java-Json
+ads: true
+comments: true
 description: Jackson 序列化Java List 对象是保留List中对象的类型信息，以便正确的反序列化。
 ---
 
@@ -11,6 +13,7 @@ description: Jackson 序列化Java List 对象是保留List中对象的类型信
 ## Example 1: 序列化包含List的对象
 
 　　这个example转换`Zoo`类成json。 `Zoo`类包含动物园的name,所在city,和圈养的animals List。List中的数据类型是`Animal`，例如，list中包含的动物是抽象类`Animal`的子类。先看下序列化Zoo类时的结果。首先我们创建`Zoo`类实例，注意构造器的编码。当我们尝试从Json反序列化得到`Zoo`对象时，Jackson必须知道构建`Zoo`对象时应该用接收`name`和`city`属性的构造器方法。
+
 
 {% highlight java linenos %}
 

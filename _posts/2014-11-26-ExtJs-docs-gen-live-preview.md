@@ -4,13 +4,17 @@ title: JSDuck实现ExtJs docs代码实时预览
 category: tech
 tags: JSDuck ExtJs-docs-live-preview
 description: 用JSDuck给自己的ExtJs项目增加ExtJs官网中docs一样的实时预览功能
+image:
+  teaser: ../public/img/jsDuck/doc-live-preview.gif
 ---
 
 　　对于演示一些可视化组件，live preview是很有用的，代码是相对独立的，并能渲染这个组件到document body 中。
 
 　　先来看一下ExtJs docs官网的代码实时预览效果：
 
-![doc-live-preview.gif](../../../public/img/jsDuck/doc-live-preview.gif)
+
+
+![doc-live-preview.gif](/public/img/jsDuck/doc-live-preview.gif)
 
 ## 如何用JSDuck生成代码live preview的效果：
 
