@@ -12,6 +12,10 @@ layout: default
       <li><a href="#section-4">第四部分</a></li>
       <li><a href="#section-5">第五部分</a></li>
     </ul>
+
+    {% if page.comments == true %}
+          {% include comments.html %}
+          {% endif %}
   </div>-->
 
 	<article class="wrap" itemscope itemtype="http://schema.org/Article">
@@ -38,7 +42,8 @@ layout: default
 					{% include page-meta.html %}
 				</footer><!-- /.footer -->
 				<aside>
-					{% if page.comments == true %}{% include comments.html %}{% endif %}
+          {% include comments.html %}
+<!--		判断是否显示评论			-->
 				</aside>
 			</div><!-- /.content -->
 		</div><!-- /.inner-wrap -->
