@@ -5,7 +5,7 @@ description: 给我一个接口、一份文档，我能窥探整个世界
 logo: logo.jpg # 120x120 px default image used for Twitter summary card
 teaser: branch-400x250.jpg # 400x250 px default teaser image used in image archive grid
 locale:
-url: http://127.0.0.1:4000
+url: http://tanliyuan.github.io/
 
 # Jekyll configuration
 
