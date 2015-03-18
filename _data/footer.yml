@@ -2,6 +2,8 @@
 
 - title: 订阅
   url: /subscribe/
+  enable: false
 
 - title: 捐赠
   url: http://mademistakes.com
+  enable: false

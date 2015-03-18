@@ -7,7 +7,7 @@
         {% assign domain = site.url %}
     {% endif %}
 
-    <li><a href="{{ domain }}{{ link.url }}" class="btn btn-info" role="button"
+    <li><a href="{{ domain }}{{ link.url }}" 
            {% if link.url contains "http" %}target="_blank"{% endif %}
            {% if link.enable == false %} disabled="disabled" {% endif %}
                                    >
