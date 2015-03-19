@@ -3,7 +3,9 @@
 - title: 订阅
   url: /subscribe/
   enable: false
+  img: /read2.png
 
 - title: 捐赠
   url: http://mademistakes.com
   enable: false
+  img: /pay.png
