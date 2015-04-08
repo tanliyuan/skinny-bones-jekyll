@@ -111,7 +111,15 @@
 	font-weight: 700;
 	a {
 		color: lighten($black,60);
-	}
+	};
+
+  label {
+    color: lawngreen;
+  }
+
+  li {
+    padding: 0 120px;
+  }
 }
 
 
