@@ -4,6 +4,8 @@ title: 一分钟轻松实现Chrome浏览器下翻墙
 category: tech
 tags: 自由门 SwitchySharp 翻墙
 description: SwitchySharp和自由门结合使用，轻轻松松实现翻墙，告别繁琐配置。
+image:
+  teaser: ../public/img/switch_port1.PNG
 ---
 
 　　网上看到很多关于翻墙的教程，但是配置过程及其费时繁琐，而且有些还不稳定，使用起来也不方便。下面的是本人一直在使用的翻墙方法，，小白式操作，分分钟就能配置好。
