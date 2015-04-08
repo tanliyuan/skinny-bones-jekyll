@@ -256,6 +256,7 @@
 	color: $white;
 	@include media($large) {
 		background-size: cover;
+    height: 500px;
 	}
 }
 .page-lead-content {
